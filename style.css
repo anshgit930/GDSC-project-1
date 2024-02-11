@@ -1,4 +1,5 @@
 *{
+<<<<<<< HEAD
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -204,4 +205,35 @@
 }
 #card3{
    background-image: url(images/unsustainable.jpg);
+=======
+    padding: 0;
+    margin: 0;
+
+}
+
+.landingpage{
+width: 100%;
+border: 1px solid black;
+height: 90vh;
+position: relative;
+}
+.mainIMG{
+    position:absolute;
+    width: 160%;
+    height: 90vh;
+}
+.heading{
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    align-items: center;
+    /* border: 1px solid white; */
+    width: 80%;
+    height: 56%;
+    margin-top: 230px;
+    font-size:230px;
+    margin-left: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+>>>>>>> 8807047e5f4e8c7d184d0544b5ef1baaaef59e72
 }
