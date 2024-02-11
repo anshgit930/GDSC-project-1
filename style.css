@@ -1,0 +1,207 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'montserrat';
+     color: #000;
+}
+ html, body{
+    height: 100%;
+    width: 100%;
+ }
+ #nav{
+    height: 145px;
+    width: 100% ;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 150px ;
+    gap: 150px;
+    position: fixed;
+    z-index: 99;
+    
+ }
+ #nav img{
+    height: 75px;
+ }
+ #nav h4{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 19px;
+    color: #fff;
+ }
+ video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+ }
+ #main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+ }
+ #page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+ }
+ #page1 h1{
+    font-size: 140px;
+    font-weight: 900;
+    position: relative;
+    color: #fff;
+ }
+ #page1 h1::before{
+    content: "LIFE BELOW WATER";
+    position: absolute;
+   color: black;
+   top: -6px;
+   left: -6px;
+   -webkit-text-stroke: 2px rgb(21, 149, 211);
+   z-index: -1;
+ }
+ #page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+ }
+ #page1 p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 40%;
+    color: #fff;
+ }
+ #page2{
+   min-height:100vh ;
+   width:100% ;
+   z-index: 10;
+ }
+ #cursor{
+   height: 20px;
+   width: 20px;
+   background-color: #1595d3;
+   border-radius: 50%;
+   position: fixed;
+   z-index: 99;
+ }
+ #cursor-blur{
+   height: 500px;
+   width: 500px;
+   background-color: rgba(21, 148, 211, 0.19);
+   border-radius: 50%;
+   position: fixed;
+   filter: blur(40px);
+   z-index: 9;
+ }
+
+ #scroller{
+   white-space: nowrap;
+   overflow-x: auto;
+   overflow-y: hidden;
+   position: relative;
+   z-index: 10;
+ }
+ #scroller::-webkit-scrollbar{
+   display: none;
+ }
+ .scroller-in{
+   display: inline-block;
+   white-space: nowrap;
+   animation-name: scroll ;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+ }
+ #scroller h4{
+   display: inline-block;
+   font-size: 120px;
+   font-weight:900 ;
+   font-family:'Gill Sans', sans-serif;
+   margin-right: 22px;
+   color: transparent;
+   transition: all linear 0.2s;
+   text-transform: uppercase;
+   -webkit-text-stroke: 2px #003570;
+ }
+#scroller h4:hover{
+   color: #1595d3;
+}
+ @keyframes scroll {
+      from{
+         transform: translateX(0);
+      }
+      to{
+         transform: translateX(-100%);
+      }
+ }
+
+ #about-us{
+   height: 40vh;
+   width: 100% ;
+   /* background-color: red; */
+   display: flex;
+   padding: 0 50px;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+ #about-us img{
+   height: 220px;
+   width: 220px;
+   border-radius: 20px;
+   object-fit: cover;
+ }
+#about-us-in{
+   width: 40%;
+   text-align: center;
+}
+#about-us-in h3{
+   font-size: 54px;
+   font-style: 800;
+   margin-bottom: 40px;
+}
+#about-us-in p{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   line-height: 26px;
+} 
+
+#cards-container{
+   /* background-color: red; */
+   height: 60vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   gap:70px;
+   position: relative;
+   z-index: 10;
+}
+
+.card{
+   height: 80%;
+   width: 24%;
+   /* background-color: #1595d3; */
+   border-radius: 20px;
+   background-size: cover;
+   background-position: center;
+}
+#card1{
+   background-image: url(images/pollution.jpg);
+
+}
+#card2{
+   background-image: url(images/habitatloss.jpg);
+}
+#card3{
+   background-image: url(images/unsustainable.jpg);
+}
