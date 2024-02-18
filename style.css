@@ -372,6 +372,7 @@
    font-weight: 900;
    font-family: gilroy;
    color: #000;
+   white-space: nowrap;
    -webkit-text-stroke: 2px #fff;
  }
  
