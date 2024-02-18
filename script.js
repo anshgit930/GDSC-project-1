@@ -2,26 +2,26 @@ var crsr= document.querySelector("#cursor")
 var blur= document.querySelector("#cursor-blur")
 
 document.addEventListener("mousemove", function(dets){
-    crsr.style.left = dets.x+"px"
-    crsr.style.top = dets.y+"px"
+    // crsr.style.left = dets.x+"px"
+    // crsr.style.top = dets.y+"px"
     blur.style.left = dets.x- 300 +"px" //300 is actually half of blur size
     blur.style.top = dets.y- 300 +"px"
 })
 
-var h4all = document.querySelectorAll("#nav h4");
-h4all.forEach(function (elem) {
-  elem.addEventListener("mouseenter", function () {
-    crsr.style.scale = 3;
-    crsr.style.border = "1px solid #fff";
-    crsr.style.backgroundColor = "transparent";
-    // crsr.style.transition = "0.2s linear";
-  });
-  elem.addEventListener("mouseleave", function () {
-    crsr.style.scale = 1;
-    crsr.style.border = "0px solid #1595d3";
-    crsr.style.backgroundColor = "#1595d3";
-  });
-});
+// var h4all = document.querySelectorAll("#nav h4");
+// h4all.forEach(function (elem) {
+//   elem.addEventListener("mouseenter", function () {
+//     // crsr.style.scale = 3;
+//     // crsr.style.border = "1px solid #fff";
+//     // crsr.style.backgroundColor = "transparent";
+//     // crsr.style.transition = "0.2s linear";
+//   });
+//   elem.addEventListener("mouseleave", function () {
+//     // crsr.style.scale = 1;
+//     // crsr.style.border = "0px solid #1595d3";
+//     // crsr.style.backgroundColor = "#1595d3";
+//   });
+// });
 
 
 gsap.to("#nav", {

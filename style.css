@@ -97,14 +97,14 @@
    width:100% ;
    z-index: 10;
  }
- #cursor{
+ /* #cursor{
    height: 20px;
    width: 20px;
    background-color: #1595d3;
    border-radius: 50%;
    position: fixed;
    z-index: 99;
- }
+ } */
  #cursor-blur{
    height: 600px;
    width: 600px;
